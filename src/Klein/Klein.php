@@ -781,7 +781,7 @@ class Klein
             E_NOTICE | E_WARNING
         );
 
-        if (false === preg_match($regex, null) || !empty($error_string)) {
+        if (false === preg_match($regex, $error_string) || !empty($error_string)) {
             // Remove our temporary error handler
             restore_error_handler();
 
