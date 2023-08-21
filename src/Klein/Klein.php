@@ -771,7 +771,7 @@ class Klein
      */
     private function validateRegularExpression($regex)
     {
-        $error_string = null;
+        $error_string = "";
 
         // Set an error handler temporarily
         set_error_handler(
